@@ -161,7 +161,7 @@ class AR(torch.nn.Module):
                 labels = torch.tensor(gt_dict[key])
                 if len(labels)==0: # FP is not considered
                     continue
-                values[idx]=AR.get_values(n_proposals,self.iou_thresholds, proposals.reshape(-1,3), labels.reshape(-1,2))#计算TP,FN
+                values[idx]=AR.get_values(n_proposals,self.iou_thresholds, proposals.reshape(-1,3), labels.reshape(-1,2)) #TP,FN
             values_sum = values.sum(dim=0)
             TP = values_sum[:, 0]
             FN = values_sum[:, 1]
