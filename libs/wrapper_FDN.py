@@ -64,7 +64,7 @@ def test_one_epoch(infer_dlr, gt_dict, model, rso, device):
                 seg_tar_dict[fn]=seg_target_list[idx].data.cpu().numpy().ravel()
         EER,_,_,_,_,_=eval_PFD(seg_score_dict,seg_tar_dict)
         cp_mAP,_,_=eval_TFL(gt_dict,cp_dict, detail=True)
-    return EER*100, cp_mAP
+    return EER, cp_mAP
       
 
 def _seg2bd_label(seglabel):
