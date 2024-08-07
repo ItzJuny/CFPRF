@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--dn', type=str, default="PS")
     parser.add_argument('--seql', type=int, default=1070)
     parser.add_argument('--rso', type=int, default=20)
-    parser.add_argument('--v1', type=float, default=0.15)
+    parser.add_argument('--v1', type=float, default=0.25)
     parser.add_argument('--v2', type=float, default=0.1)
     parser.add_argument('--glayer', type=int, default=1) 
     parser.add_argument('--save', action='store_true', default=False)
