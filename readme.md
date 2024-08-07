@@ -76,8 +76,8 @@ If you want to produce results from a saved '.npy' file, then remove `--eval` fr
 The first stage is to train the Frame-level Detection Network (FDN):
 
  - ``` python train_stage1.py --dn PS --v1 0.25 --v2 0.1  --num_epoch 18 --save```
- - ``` python train_stage1.py --dn HAD --v1 0.15 --v2 0.1  --num_epoch 10 --save``````
- - ``` python train_stage1.py --dn HAD --v1 0.25 --v2 0  --num_epoch 30 --save```
+ - ``` python train_stage1.py --dn HAD --v1 0.15 --v2 0.1  --num_epoch 10 --save```
+ - ``` python train_stage1.py --dn LAVDF --v1 0.25 --v2 0  --num_epoch 30 --save```
 
 The second stage is to train the Proposal Refinemant Network(PRN):
 
