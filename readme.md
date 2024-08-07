@@ -75,14 +75,16 @@ If you want to produce results from a saved '.npy' file, then remove `--eval` fr
 
 The first stage is to train the Frame-level Detection Network (FDN):
 
- - ``` python train_stage1.py --dn PS --num_epoch 30 --save```
+ - ``` python train_stage1.py --dn PS --v1 0.25 --v2 0.1  --num_epoch 18 --save```
+ - ``` python train_stage1.py --dn HAD --v1 0.15 --v2 0.1  --num_epoch 10 --save``````
+ - ``` python train_stage1.py --dn HAD --v1 0.25 --v2 0  --num_epoch 30 --save```
 
 The second stage is to train the Proposal Refinemant Network(PRN):
 
  - ``` python train_stage2.py --dn PS --num_epoch 50 --save```
 
 ## Acknowledgements
-This repository thanks several open-source projects: [PartialSpoof[1]](https://github.com/nii-yamagishilab/PartialSpoof), [TDL-ADD[2]](https://github.com/xieyuankun/TDL-ADD), [SSLAS[3]](https://github.com/TakHemlata/SSL_Anti-spoofing), [Wav2vec[4]](https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec/xlsr). 
+This repository thanks several open-source projects: [PartialSpoof[1]](https://github.com/nii-yamagishilab/PartialSpoof), [TDL-ADD[2]](https://github.com/xieyuankun/TDL-ADD), [LAV-DF[3]](https://github.com/ControlNet/LAV-DF), [SSLAS[4]](https://github.com/TakHemlata/SSL_Anti-spoofing). 
 
 ```
 @article{10003971,
@@ -108,6 +110,29 @@ This repository thanks several open-source projects: [PartialSpoof[1]](https://g
 ```
 
 ```
+@inproceedings{cai2022you,
+  title = {Do You Really Mean That? Content Driven Audio-Visual Deepfake Dataset and Multimodal Method for Temporal Forgery Localization},
+  author = {Cai, Zhixi and Stefanov, Kalin and Dhall, Abhinav and Hayat, Munawar},
+  booktitle = {2022 International Conference on Digital Image Computing: Techniques and Applications (DICTA)},
+  year = {2022},
+  doi = {10.1109/DICTA56598.2022.10034605},
+  pages = {1--10},
+  address = {Sydney, Australia},
+}
+
+@article{cai2023glitch,
+  title = {Glitch in the Matrix: A Large Scale Benchmark for Content Driven Audio-Visual Forgery Detection and Localization},
+  author = {Cai, Zhixi and Ghosh, Shreya and Dhall, Abhinav and Gedeon, Tom and Stefanov, Kalin and Hayat, Munawar},
+  journal = {Computer Vision and Image Understanding},
+  year = {2023},
+  volume = {236},
+  pages = {103818},
+  issn = {1077-3142},
+  doi = {10.1016/j.cviu.2023.103818},
+}
+```
+
+```
 @inproceedings{tak2022automatic,
   title={Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation},
   author={Tak, Hemlata and Todisco, Massimiliano and Wang, Xin and Jung, Jee-weon and Yamagishi, Junichi and Evans, Nicholas},
@@ -116,15 +141,6 @@ This repository thanks several open-source projects: [PartialSpoof[1]](https://g
 }
 ```
 
-```
-@article{babu2021xlsr,
-      title={XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale}, 
-      author={Arun Babu and Changhan Wang and Andros Tjandra and Kushal Lakhotia and Qiantong Xu and Naman Goyal and Kritika Singh and Patrick von Platen and Yatharth Saraf and Juan Pino and Alexei Baevski and Alexis Conneau and Michael Auli},
-      year={2021},
-      volume={abs/2111.09296},
-      journal={arXiv},
-}
-```
 
 ## Citation
 Kindly cite our work if you find it useful.
