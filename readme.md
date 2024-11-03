@@ -147,11 +147,13 @@ Kindly cite our work if you find it useful.
 
 
 ```
-@article{wu2024cfprf,
-  title={Coarse-to-Fine Proposal Refinement Framework for Audio Temporal Forgery Detection and Localization},
-  author={Wu, Junyan and Lu, Wei and Luo, Xiangyang and Yang, Rui and Wang, Qian and Cao, Xiaochun},
-  journal={arXiv preprint arXiv:2407.16554},
-  year={2024},
-  doi={10.1145/3664647.3680585},
+@inproceedings{10.1145/3664647.3680585,
+author = {Wu, Junyan and Lu, Wei and Luo, Xiangyang and Yang, Rui and Wang, Qian and Cao, Xiaochun},
+title = {Coarse-to-Fine Proposal Refinement Framework for Audio Temporal Forgery Detection and Localization},
+booktitle = {Proceedings of the 32nd ACM International Conference on Multimedia},
+pages = {7395–7403},
+numpages = {9},
+year = {2024},
+doi = {10.1145/3664647.3680585},
 }
 ```
