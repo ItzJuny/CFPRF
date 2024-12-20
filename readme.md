@@ -49,7 +49,7 @@ Evaluating checkpoints for different datasets to get the results:
 If you want to produce results from a saved '.npy' file, then remove `--eval` from the above command.
 
 
-### 2.2 PDF Evaluation Results
+### 2.2 PFD Evaluation Results
 
 | **Dataset** | **EER** | **AUC** | **PRE** | **REC** | **F1** |
 |-------------|---------|---------|---------|---------|--------|
